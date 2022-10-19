@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: serif;
+    background-size: cover;
+  
+}
+
+header {
+    background-color: rgba(106, 6, 43, 0.365);
+    border-style: solid;
+    text-align: center;
+
+}
+label{
+    display: inline-block;
+    clear: left;
+    width: 130px;
+    text-align: right;
+}
+input {
+  display: inline-block;
+}
+#form form {
+    background-color: rgb(154, 152, 152);
+    border-style: solid;
+    text-align: right;
+    width: 60%;
+    height: 100%;
+    margin: 10px auto;
+    padding: 15px;
+    overflow: auto;
+    background-image: url('tip.jpeg');
+    background-position: left;
+    background-repeat: no-repeat;
+
+}
+form.input[type="range"] {
+    color: brown;
+    width: 10px;
+}
+
+#form form input {
+    width: 40%;
+    margin: 15px auto;
+    padding: 5px;
+    background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+    header div form{
+        margin: 100px 0;
+    }
+}
