@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sales Tax Calculator</title>
+    <link rel="stylesheet" href="lab3_style.css">
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="inline">
+            <h2>ITMD 4/541 - Lab 3 - Monark Gondaliya </h1>
+                <h1>Tip Calculator</h1>
+        </div>
+    </header>
+    <div id="form">
+        <form action="# ">
+
+            <label for="idBillTotal">Bill Total: </label>
+            <input type="text" name="Bill Total" id="idBillTotal"> <br>
+
+            <label for="tip">Tip: </label>
+            <input type="range" name="rangeInput" min="0" max="100" value="0" onchange="updateTextInput(this.value);"><br>
+
+            <label for="idTipPercentage">Tip Percentage: </label>
+            <input type="text" id="idTipPercentage" value="0" disabled> <br>
+
+            <label for="idTipAmount">Tip Amount: </label>
+            <input type="text" name="Tip Amount" id="idTipAmount" disabled> <br>
+
+            <label for="idTotal"> Total Bill with Tip: </label>
+            <input type="text" name="Total" id="idTotal" disabled> <br>
+
+
+
+        </form>
+    </div>
+    
+
+
+</body>
