@@ -1,5 +1,5 @@
 
-document.addEventListener("click", TipCalculate);
+document.addEventListener("change", TipCalculate);
 function updateTextInput(val) {
     document.getElementById('idTipPercentage').value = val;
 }
@@ -11,8 +11,8 @@ function TipCalculate() {
     if (billAmount < 0 || billAmount == '' || isNaN(billAmount)) {
         alert("Total Bill value must be a valid positive number");
         document.getElementById('idBillTotal').value = '';
-        document.getElementById('idTipAmount').value = '';
-        document.getElementById('idTotal').value = '';
+        document.getElementById('idTipAmount').value = '0';
+        document.getElementById('idTotal').value = '0';
     }
     else {
         let Tip = (idTipPercentage / 100) * billAmount;
