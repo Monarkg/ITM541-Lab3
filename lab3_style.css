@@ -17,7 +17,6 @@ header {
 }
 label{
     display: inline-block;
-    clear: left;
     width: 130px;
     text-align: right;
 }
@@ -28,17 +27,6 @@ input {
 body{
     background-color: aquamarine;
 }
-#form form {
-    position: relative;
-    background-color: rgb(154, 152, 152);
-    border-style: solid;
-    text-align: right;
-    width: 30%;
-    height: 30%;
-    margin: 10px auto;
-    padding: 15px;
-
-}
 img{
     position:absolute;
     top: 10px;    
@@ -46,6 +34,19 @@ img{
   
    
 }
+#form form {
+    position: relative;
+    background-color: rgb(154, 152, 152);
+    border-style: solid;
+    text-align: right;
+    width: 720px;
+    height: 30%;
+    margin: 10px auto;
+    padding: 15px;
+    
+
+}
+
 
 #form form input {
     width: 40%;
@@ -59,16 +60,19 @@ footer {
     font-size:15px;   
 }
 
-@media (max-width: 592px) {
-    header {
-        
+@media (max-width: 720px) {
+    header{
+        font-size: small;
     }
     #form form {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
-    img {
+    img{
         width: 30%;
         height: auto;
+    }
+    footer{
+        color:red;
     }
 }
